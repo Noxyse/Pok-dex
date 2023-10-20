@@ -1,0 +1,14 @@
+[
+    {
+        "Name":"Bulbizarre",
+        "Type": ["Plante","Poison"],
+        "ID": "#0001",
+        "img": "Images/Miniature_0001_DEPS.png"
+    },
+    {
+        "Name":"Herbizarre",
+        "Type": ["Plante","Poison"],
+        "ID": "#0002",
+        "img": "Images/Miniature_0002_DEPS.png"
+    }
+]
