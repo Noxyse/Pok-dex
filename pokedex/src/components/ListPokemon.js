@@ -4,16 +4,16 @@ export default function ListPokemon(props) {
     const [pokemonList, setPokemonList] = useState([]);
     useEffect(() => {
         fetch("http://localhost:3000/data.json").then((data) => {
-            data.json().then((listPokemon) => {
-                setPokemonList(listPokemon)
+            data.json().then((pokemons) => {
+                setPokemonList(pokemons)
             })
         })
     })
     return (
-        {
-            pokemonList.map((pokemon, index) => (
-                <Card namePokemon="Pikachu" />
-            ))
-        }
+        <div id="list_conmponent_pokemon">
+            {pokemonList.map((pokemon, key) => {
+                return <Card key={key} pokemon={pokemon} />
+            })}
+        </div>
     )
 }
