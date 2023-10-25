@@ -15,5 +15,7 @@ export default function ListPokemon(props) {
                 return <Card key={key} pokemon={pokemon} />
             })}
         </div>
+
+        //TODO: créer une liste de component Compteur, qui affiche un compteur et un bouton +1
     )
 }
