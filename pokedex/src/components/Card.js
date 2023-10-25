@@ -6,7 +6,7 @@ export default function Card(props){
             <p>{pokemonData.Name}</p>
             <p>{pokemonData.Type}</p>
             <p>{pokemonData.ID}</p>
-            <p>{pokemonData.img}</p>
+            <img src={pokemonData.img} alt={"image du pokemon " + pokemonData.Name} />
         </div>
     )
 }
