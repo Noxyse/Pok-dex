@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Card from "./Card.js"
+import Card from "./Card.js";
 export default function ListPokemon(props) {
     const [pokemonList, setPokemonList] = useState([]);
     useEffect(() => {
@@ -12,10 +12,12 @@ export default function ListPokemon(props) {
     return (
         <div id="list_conmponent_pokemon">
             {pokemonList.map((pokemon, key) => {
-                return <Card key={key} pokemon={pokemon} />
+                return (
+                    <div>
+                        <Card key={key} pokemon={pokemon} />
+                    </div>
+                )
             })}
         </div>
-
-        //TODO: créer une liste de component Compteur, qui affiche un compteur et un bouton +1
     )
 }
